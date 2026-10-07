@@ -22,7 +22,7 @@ function Dashboard() {
     const [pageNumber, setPageNumber] = useState(1);
     const [pageSize] = useState(10);
     const [totalPages, setTotalPages] = useState(1);
-    const [totalUsers, setTotalUsers] = useState(0);
+
 
     // =========================
     // GET USERS
@@ -46,7 +46,7 @@ function Dashboard() {
         console.log("FULL API RESPONSE:", data);
 
         setUser1(data.users);
-        setTotalUsers(data.totalCount);
+       
         setTotalPages(data.toalPages);
 
     } catch (error) {
