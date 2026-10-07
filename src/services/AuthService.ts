@@ -1,7 +1,8 @@
 import axios from "axios";
 import type { LoginRequest } from "../types/Auth";
 
-const API_URL = "https://localhost:7192/api";
+
+const API_URL = import.meta.env.VITE_API_URL;
 
 export const login = async (data: LoginRequest) => {
 
